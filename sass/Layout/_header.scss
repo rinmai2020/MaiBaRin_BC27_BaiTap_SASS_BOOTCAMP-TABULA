@@ -81,16 +81,6 @@ header.sticky {
   visibility: hidden;
   height: 6rem;
 }
-@include responsive("extra-large") {
-  // .wrapper-navbar {
-  //   display: none !important;
-  // }
-  .wrapper-header {
-    .img-violet {
-      margin-top: 20rem;
-    }
-  }
-}
 label {
   cursor: pointer;
   color: $color-2;
@@ -119,6 +109,21 @@ label {
 }
 ///responsive================
 @include responsive("extra-large") {
+  header {
+    .header-item {
+      .wrapper-navbar {
+        .img-violet {
+          margin-top: 20rem;
+        }
+        .contact-socials {
+          .socials {
+            display: flex;
+            margin-left: 0rem !important;
+          }
+        }
+      }
+    }
+  }
   header.sticky {
     width: 100%;
     height: 7rem;
