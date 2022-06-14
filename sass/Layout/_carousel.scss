@@ -24,34 +24,6 @@
   }
 
   //responsive
-  @include responsive("large") {
-    // .img-yellow {
-    //   width: 80rem;
-    // }
-    .carousel {
-      margin-top: 10rem;
-      padding: 0 2rem;
-      .carousel-item {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-        .carousel-infor {
-          width: 90%;
-          display: flex;
-          align-items: flex-start;
-          h6 {
-            @include styleText($fs-3, $fw-3, $color-pink);
-          }
-          h1 {
-            @include styleText(5.3rem, $fw-3, $color-1);
-          }
-        }
-      }
-    }
-    .img-violet {
-    }
-  }
 }
 @include responsive("small") {
   .carousel {
@@ -66,5 +38,34 @@
         }
       }
     }
+  }
+}
+@include responsive("extra-large") {
+  // .img-yellow {
+  //   width: 80rem;
+  // }
+  .carousel {
+    width: 100%;
+    margin-top: 10rem;
+    padding: 0 2rem;
+    .carousel-item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      // justify-content: center;
+      .carousel-infor {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        h6 {
+          @include styleText($fs-3, $fw-3, $color-pink);
+        }
+        h1 {
+          @include styleText(5.3rem, $fw-3, $color-1);
+        }
+      }
+    }
+  }
+  .img-violet {
   }
 }
