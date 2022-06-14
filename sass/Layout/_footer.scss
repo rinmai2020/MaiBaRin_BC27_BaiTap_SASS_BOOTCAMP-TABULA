@@ -1,7 +1,9 @@
 .img-accent {
   position: absolute;
   bottom: 0;
-  z-index: -111;
+  left: 0;
+  right: 0;
+  z-index: 0;
   // width: 100%;
   img {
     object-fit: cover;
@@ -9,16 +11,22 @@
   }
 }
 .img-footer {
-  // width: 100%;
+  position: absolute;
+  top: 19rem;
+  left: 0;
+  right: 0;
   img {
     object-fit: cover;
     width: 100%;
   }
 }
-
+.img-contact {
+  z-index: 2;
+}
 footer {
   background: #a91d7e;
   padding-top: 10rem;
+
   .footer-group {
     position: relative;
     z-index: 1111;
@@ -101,5 +109,18 @@ footer {
       object-fit: cover;
       width: 80%;
     }
+  }
+  .img-footer {
+    top: 26rem;
+  }
+}
+@include responsive("large") {
+  .img-footer {
+    top: 60rem;
+  }
+}
+@include responsive("small") {
+  .img-footer {
+    top: 62rem;
   }
 }

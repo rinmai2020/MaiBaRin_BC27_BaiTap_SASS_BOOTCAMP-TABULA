@@ -425,7 +425,7 @@ label #cancel {
 
 @media screen and (max-width: 1200px) {
   .carousel {
-    margin-top: 10rem;
+    margin-top: 6rem;
     padding: 0 2rem;
   }
   .carousel .carousel-item {
@@ -461,21 +461,11 @@ label #cancel {
   }
 }
 
-.img-accent {
-  position: absolute;
-  bottom: 0;
-  z-index: 11;
-}
-
-.img-accent img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
 .img-white {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .img-white img {
@@ -497,6 +487,7 @@ label #cancel {
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .products .card:hover {
@@ -700,9 +691,6 @@ label #cancel {
   .modal-body form {
     width: 100% !important;
   }
-  .card-body {
-    padding: 8rem;
-  }
   .modal-body {
     z-index: 1;
   }
@@ -718,7 +706,9 @@ label #cancel {
 .img-accent {
   position: absolute;
   bottom: 0;
-  z-index: -111;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .img-accent img {
@@ -727,10 +717,21 @@ label #cancel {
   width: 100%;
 }
 
+.img-footer {
+  position: absolute;
+  top: 19rem;
+  left: 0;
+  right: 0;
+}
+
 .img-footer img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.img-contact {
+  z-index: 2;
 }
 
 footer {
@@ -836,6 +837,21 @@ footer .footer-group .newsletter button {
     -o-object-fit: cover;
        object-fit: cover;
     width: 80%;
+  }
+  .img-footer {
+    top: 26rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-footer {
+    top: 60rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .img-footer {
+    top: 62rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
